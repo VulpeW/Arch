@@ -105,7 +105,7 @@ async function run() {
       try {
         const channel = process.env.PART_D_BROWSER_CHANNEL || (process.platform === 'win32' ? 'msedge' : null);
         browser = await chromium.launch(channel ? { channel } : {});
-        const page = await browser.newPage();
+        const page = await browser.newPage({ timezoneId: 'Asia/Hong_Kong', locale: 'en-GB' });
         const prediction = await readOdds(page, race);
         log(prediction);
         if (probe) { console.log(JSON.stringify(prediction)); return; }
@@ -126,3 +126,4 @@ async function run() {
   log({ kind: 'run_complete' });
 }
 run().catch(error => { log({ kind: 'fatal', message: error.message }); process.exitCode = 1; });
+
