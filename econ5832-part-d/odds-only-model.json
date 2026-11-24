@@ -1,0 +1,32 @@
+{
+  "type": "race_conditional_logit",
+  "beta": 1.05661267746259,
+  "formula": "p_i = exp(-beta*log(win_odds_i))/sum_j(exp(-beta*log(win_odds_j)))",
+  "training_races": 972,
+  "historical_odds": "results-page closing Win odds",
+  "evaluation": {
+    "source_sha256": "b3a1de67aa7cc3b8709ed40862597e30ffffec1904e2215d12e0a78147171835",
+    "usable_races": 972,
+    "excluded_races": 11,
+    "first_date": "2025-09-07",
+    "last_date": "2026-10-19",
+    "test_start": "2026-06-21",
+    "training_races": 775,
+    "training_beta": 1.063616986137697,
+    "test": {
+      "races": 197,
+      "winner_accuracy": 0.27918781725888325,
+      "race_log_loss": 2.0665414875281027
+    },
+    "market_test": {
+      "races": 197,
+      "winner_accuracy": 0.27918781725888325,
+      "race_log_loss": 2.0664469913032413
+    },
+    "happy_valley_test": {
+      "races": 70,
+      "winner_accuracy": 0.2714285714285714,
+      "race_log_loss": 1.9635312561521197
+    }
+  }
+}

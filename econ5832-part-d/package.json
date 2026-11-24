@@ -1,0 +1,12 @@
+{
+  "name": "econ5832-part-d",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "probe": "node part-d-nov25.cjs --probe --race 8",
+    "collect": "node part-d-nov25.cjs"
+  },
+  "dependencies": {
+    "playwright": "1.62.1"
+  }
+}

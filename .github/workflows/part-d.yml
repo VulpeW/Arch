@@ -1,0 +1,172 @@
+name: Part D cloud predictions
+on:
+  push:
+    paths:
+      - 'econ5832-part-d/**'
+      - '.github/workflows/part-d.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '45 9 25 11 *'
+permissions:
+  contents: read
+concurrency:
+  group: part-d-${{ github.event_name }}
+  cancel-in-progress: false
+jobs:
+  preflight:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: npm install
+        working-directory: econ5832-part-d
+      - run: npx playwright install --with-deps chromium
+        working-directory: econ5832-part-d
+      - name: Verify live Race 8 and model
+        run: npm run probe
+        working-directory: econ5832-part-d
+        env:
+          PART_D_OUTPUT_DIR: results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: part-d-preflight
+          path: econ5832-part-d/results/
+          retention-days: 14
+  predictions:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v6
+      - name: Verify meeting date
+        run: test "$(TZ=Asia/Hong_Kong date +%F)" = "2026-11-25"
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: npm install
+        working-directory: econ5832-part-d
+      - run: npx playwright install --with-deps chromium
+        working-directory: econ5832-part-d
+      - name: Prepare Race 1 prediction
+        if: success() || failure()
+        continue-on-error: true
+        run: node part-d-nov25.cjs --race 1
+        working-directory: econ5832-part-d
+        env:
+          PART_D_OUTPUT_DIR: results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: part-d-through-race-1
+          path: econ5832-part-d/results/
+          retention-days: 14
+      - name: Prepare Race 2 prediction
+        if: success() || failure()
+        continue-on-error: true
+        run: node part-d-nov25.cjs --race 2
+        working-directory: econ5832-part-d
+        env:
+          PART_D_OUTPUT_DIR: results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: part-d-through-race-2
+          path: econ5832-part-d/results/
+          retention-days: 14
+      - name: Prepare Race 3 prediction
+        if: success() || failure()
+        continue-on-error: true
+        run: node part-d-nov25.cjs --race 3
+        working-directory: econ5832-part-d
+        env:
+          PART_D_OUTPUT_DIR: results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: part-d-through-race-3
+          path: econ5832-part-d/results/
+          retention-days: 14
+      - name: Prepare Race 4 prediction
+        if: success() || failure()
+        continue-on-error: true
+        run: node part-d-nov25.cjs --race 4
+        working-directory: econ5832-part-d
+        env:
+          PART_D_OUTPUT_DIR: results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: part-d-through-race-4
+          path: econ5832-part-d/results/
+          retention-days: 14
+      - name: Prepare Race 5 prediction
+        if: success() || failure()
+        continue-on-error: true
+        run: node part-d-nov25.cjs --race 5
+        working-directory: econ5832-part-d
+        env:
+          PART_D_OUTPUT_DIR: results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: part-d-through-race-5
+          path: econ5832-part-d/results/
+          retention-days: 14
+      - name: Prepare Race 6 prediction
+        if: success() || failure()
+        continue-on-error: true
+        run: node part-d-nov25.cjs --race 6
+        working-directory: econ5832-part-d
+        env:
+          PART_D_OUTPUT_DIR: results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: part-d-through-race-6
+          path: econ5832-part-d/results/
+          retention-days: 14
+      - name: Prepare Race 7 prediction
+        if: success() || failure()
+        continue-on-error: true
+        run: node part-d-nov25.cjs --race 7
+        working-directory: econ5832-part-d
+        env:
+          PART_D_OUTPUT_DIR: results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: part-d-through-race-7
+          path: econ5832-part-d/results/
+          retention-days: 14
+      - name: Prepare Race 8 prediction
+        if: success() || failure()
+        continue-on-error: true
+        run: node part-d-nov25.cjs --race 8
+        working-directory: econ5832-part-d
+        env:
+          PART_D_OUTPUT_DIR: results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: part-d-through-race-8
+          path: econ5832-part-d/results/
+          retention-days: 14
+      - name: Prepare Race 9 prediction
+        if: success() || failure()
+        continue-on-error: true
+        run: node part-d-nov25.cjs --race 9
+        working-directory: econ5832-part-d
+        env:
+          PART_D_OUTPUT_DIR: results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: part-d-through-race-9
+          path: econ5832-part-d/results/
+          retention-days: 14
+

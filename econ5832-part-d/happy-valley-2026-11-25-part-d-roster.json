@@ -1,0 +1,926 @@
+{
+  "meeting_date": "2026-11-25",
+  "venue": "HV",
+  "checked_at_hkt": "2026-11-24T16:19:36+08:00",
+  "historical_join_key": "horse_id",
+  "races": [
+    {
+      "race_number": 1,
+      "source": "https://racing.hkjc.com/en-us/local/information/racecard?Racecourse=HV&racedate=2026%2F11%2F25&RaceNo=1",
+      "active_runners": [
+        {
+          "race_number": 1,
+          "runner_number": 1,
+          "horse_id": "K569",
+          "horse_name": "WORD OF KINDNESS",
+          "handicap_weight_lb": 135,
+          "jockey": "J Orman"
+        },
+        {
+          "race_number": 1,
+          "runner_number": 2,
+          "horse_id": "K435",
+          "horse_name": "EXCELLENT BOY",
+          "handicap_weight_lb": 134,
+          "jockey": "C L Chau (-2)"
+        },
+        {
+          "race_number": 1,
+          "runner_number": 3,
+          "horse_id": "L048",
+          "horse_name": "WHOWROTETHATSONG",
+          "handicap_weight_lb": 132,
+          "jockey": "L Ferraris"
+        },
+        {
+          "race_number": 1,
+          "runner_number": 4,
+          "horse_id": "K343",
+          "horse_name": "INCANTO STAR",
+          "handicap_weight_lb": 131,
+          "jockey": "B Avdulla"
+        },
+        {
+          "race_number": 1,
+          "runner_number": 5,
+          "horse_id": "H087",
+          "horse_name": "CAN'T GO WONG",
+          "handicap_weight_lb": 129,
+          "jockey": "M F Poon"
+        },
+        {
+          "race_number": 1,
+          "runner_number": 6,
+          "horse_id": "L138",
+          "horse_name": "GRAND TURBO",
+          "handicap_weight_lb": 129,
+          "jockey": "L Hewitson"
+        },
+        {
+          "race_number": 1,
+          "runner_number": 7,
+          "horse_id": "K306",
+          "horse_name": "SUPER SICARIO",
+          "handicap_weight_lb": 129,
+          "jockey": "D B McMonagle"
+        },
+        {
+          "race_number": 1,
+          "runner_number": 8,
+          "horse_id": "J115",
+          "horse_name": "DRACO",
+          "handicap_weight_lb": 126,
+          "jockey": "Z Purton"
+        },
+        {
+          "race_number": 1,
+          "runner_number": 9,
+          "horse_id": "K216",
+          "horse_name": "WINNING DIAMOND",
+          "handicap_weight_lb": 126,
+          "jockey": "R Kingscote"
+        },
+        {
+          "race_number": 1,
+          "runner_number": 10,
+          "horse_id": "J037",
+          "horse_name": "ONLY U",
+          "handicap_weight_lb": 123,
+          "jockey": "K C Leung"
+        },
+        {
+          "race_number": 1,
+          "runner_number": 11,
+          "horse_id": "G277",
+          "horse_name": "TO INFINITY",
+          "handicap_weight_lb": 123,
+          "jockey": "A Badel"
+        },
+        {
+          "race_number": 1,
+          "runner_number": 12,
+          "horse_id": "G307",
+          "horse_name": "PRINCE ALEX",
+          "handicap_weight_lb": 119,
+          "jockey": "S Osborne"
+        }
+      ]
+    },
+    {
+      "race_number": 2,
+      "source": "https://racing.hkjc.com/en-us/local/information/racecard?Racecourse=HV&racedate=2026%2F11%2F25&RaceNo=2",
+      "active_runners": [
+        {
+          "race_number": 2,
+          "runner_number": 1,
+          "horse_id": "L034",
+          "horse_name": "FORZA LEADER",
+          "handicap_weight_lb": 131,
+          "jockey": "Z Purton"
+        },
+        {
+          "race_number": 2,
+          "runner_number": 2,
+          "horse_id": "J359",
+          "horse_name": "LOVING VIBES",
+          "handicap_weight_lb": 131,
+          "jockey": "H Y Yuen (-7)"
+        },
+        {
+          "race_number": 2,
+          "runner_number": 3,
+          "horse_id": "L201",
+          "horse_name": "CASA PRIMO",
+          "handicap_weight_lb": 129,
+          "jockey": "B Avdulla"
+        },
+        {
+          "race_number": 2,
+          "runner_number": 4,
+          "horse_id": "L180",
+          "horse_name": "HEROIC VANGUARD",
+          "handicap_weight_lb": 129,
+          "jockey": "R Kingscote"
+        },
+        {
+          "race_number": 2,
+          "runner_number": 5,
+          "horse_id": "J288",
+          "horse_name": "LAKESHORE HERO",
+          "handicap_weight_lb": 129,
+          "jockey": "C L Chau (-2)"
+        },
+        {
+          "race_number": 2,
+          "runner_number": 6,
+          "horse_id": "K565",
+          "horse_name": "SMILING CHAMPION",
+          "handicap_weight_lb": 129,
+          "jockey": "L Hewitson"
+        },
+        {
+          "race_number": 2,
+          "runner_number": 7,
+          "horse_id": "K189",
+          "horse_name": "MAJESTIC DELIGHT",
+          "handicap_weight_lb": 128,
+          "jockey": "A Atzeni"
+        },
+        {
+          "race_number": 2,
+          "runner_number": 8,
+          "horse_id": "K150",
+          "horse_name": "AUTUMN VIBES",
+          "handicap_weight_lb": 127,
+          "jockey": "C Y Ho"
+        },
+        {
+          "race_number": 2,
+          "runner_number": 9,
+          "horse_id": "J504",
+          "horse_name": "ICONICAL",
+          "handicap_weight_lb": 125,
+          "jockey": "J Orman"
+        },
+        {
+          "race_number": 2,
+          "runner_number": 10,
+          "horse_id": "H454",
+          "horse_name": "JOLLY COMPANION",
+          "handicap_weight_lb": 125,
+          "jockey": "D B McMonagle"
+        },
+        {
+          "race_number": 2,
+          "runner_number": 11,
+          "horse_id": "K544",
+          "horse_name": "RISING ELITE",
+          "handicap_weight_lb": 123,
+          "jockey": "K C Leung"
+        },
+        {
+          "race_number": 2,
+          "runner_number": 12,
+          "horse_id": "J308",
+          "horse_name": "SOLAR RIVER",
+          "handicap_weight_lb": 120,
+          "jockey": "L Ferraris"
+        }
+      ]
+    },
+    {
+      "race_number": 3,
+      "source": "https://racing.hkjc.com/en-us/local/information/racecard?Racecourse=HV&racedate=2026%2F11%2F25&RaceNo=3",
+      "active_runners": [
+        {
+          "race_number": 3,
+          "runner_number": 1,
+          "horse_id": "L303",
+          "horse_name": "SUGAR GOODSON",
+          "handicap_weight_lb": 132,
+          "jockey": "Z Purton"
+        },
+        {
+          "race_number": 3,
+          "runner_number": 2,
+          "horse_id": "K300",
+          "horse_name": "KYRUS TREASURE",
+          "handicap_weight_lb": 131,
+          "jockey": "C L Chau (-2)"
+        },
+        {
+          "race_number": 3,
+          "runner_number": 3,
+          "horse_id": "J494",
+          "horse_name": "CASA ROCHESTER",
+          "handicap_weight_lb": 128,
+          "jockey": "L Ferraris"
+        },
+        {
+          "race_number": 3,
+          "runner_number": 4,
+          "horse_id": "L269",
+          "horse_name": "JUMBO STEPS",
+          "handicap_weight_lb": 126,
+          "jockey": "C Y Ho"
+        },
+        {
+          "race_number": 3,
+          "runner_number": 5,
+          "horse_id": "J098",
+          "horse_name": "TAKE ACTION",
+          "handicap_weight_lb": 126,
+          "jockey": "A Atzeni"
+        },
+        {
+          "race_number": 3,
+          "runner_number": 6,
+          "horse_id": "L329",
+          "horse_name": "BEST WORLD",
+          "handicap_weight_lb": 125,
+          "jockey": "B Avdulla"
+        },
+        {
+          "race_number": 3,
+          "runner_number": 7,
+          "horse_id": "H168",
+          "horse_name": "ROMANTIC FANTASY",
+          "handicap_weight_lb": 125,
+          "jockey": "S Osborne"
+        },
+        {
+          "race_number": 3,
+          "runner_number": 8,
+          "horse_id": "H486",
+          "horse_name": "KINGLY DEMEANOR",
+          "handicap_weight_lb": 123,
+          "jockey": "H Y Yuen (-7)"
+        },
+        {
+          "race_number": 3,
+          "runner_number": 9,
+          "horse_id": "K397",
+          "horse_name": "KING OF SELECTION",
+          "handicap_weight_lb": 122,
+          "jockey": "M F Poon"
+        },
+        {
+          "race_number": 3,
+          "runner_number": 10,
+          "horse_id": "H298",
+          "horse_name": "SUPERB KID",
+          "handicap_weight_lb": 122,
+          "jockey": "M L Yeung"
+        },
+        {
+          "race_number": 3,
+          "runner_number": 11,
+          "horse_id": "K177",
+          "horse_name": "AUTOMATED",
+          "handicap_weight_lb": 121,
+          "jockey": "R Kingscote"
+        },
+        {
+          "race_number": 3,
+          "runner_number": 12,
+          "horse_id": "H447",
+          "horse_name": "FAMILY FORTUNE",
+          "handicap_weight_lb": 120,
+          "jockey": "A Badel"
+        }
+      ]
+    },
+    {
+      "race_number": 4,
+      "source": "https://racing.hkjc.com/en-us/local/information/racecard?Racecourse=HV&racedate=2026%2F11%2F25&RaceNo=4",
+      "active_runners": [
+        {
+          "race_number": 4,
+          "runner_number": 1,
+          "horse_id": "L314",
+          "horse_name": "THUNDER ACTION",
+          "handicap_weight_lb": 135,
+          "jockey": "M L Yeung"
+        },
+        {
+          "race_number": 4,
+          "runner_number": 2,
+          "horse_id": "J413",
+          "horse_name": "WORLD HERO",
+          "handicap_weight_lb": 132,
+          "jockey": "H Bentley"
+        },
+        {
+          "race_number": 4,
+          "runner_number": 3,
+          "horse_id": "L022",
+          "horse_name": "CROSSBORDERDUDE",
+          "handicap_weight_lb": 131,
+          "jockey": "A Atzeni"
+        },
+        {
+          "race_number": 4,
+          "runner_number": 4,
+          "horse_id": "J317",
+          "horse_name": "DRAGON FOUR SEAS",
+          "handicap_weight_lb": 131,
+          "jockey": "H Y Yuen (-7)"
+        },
+        {
+          "race_number": 4,
+          "runner_number": 5,
+          "horse_id": "J503",
+          "horse_name": "SOMELOVEFROMABOVE",
+          "handicap_weight_lb": 130,
+          "jockey": "E C W Wong (-3)"
+        },
+        {
+          "race_number": 4,
+          "runner_number": 6,
+          "horse_id": "J253",
+          "horse_name": "THE PERFECT MATCH",
+          "handicap_weight_lb": 130,
+          "jockey": "C L Chau (-2)"
+        },
+        {
+          "race_number": 4,
+          "runner_number": 7,
+          "horse_id": "K342",
+          "horse_name": "COPARTNER FLEET",
+          "handicap_weight_lb": 128,
+          "jockey": "C Y Ho"
+        },
+        {
+          "race_number": 4,
+          "runner_number": 8,
+          "horse_id": "J500",
+          "horse_name": "FLASH CURRENT",
+          "handicap_weight_lb": 128,
+          "jockey": "D B McMonagle"
+        },
+        {
+          "race_number": 4,
+          "runner_number": 9,
+          "horse_id": "J362",
+          "horse_name": "BITS SUPERSTAR",
+          "handicap_weight_lb": 127,
+          "jockey": "Z Purton"
+        },
+        {
+          "race_number": 4,
+          "runner_number": 10,
+          "horse_id": "L284",
+          "horse_name": "VIGOR HAPPINESS",
+          "handicap_weight_lb": 127,
+          "jockey": "H T Mo (-2)"
+        },
+        {
+          "race_number": 4,
+          "runner_number": 11,
+          "horse_id": "L387",
+          "horse_name": "ULTRA BOLT",
+          "handicap_weight_lb": 122,
+          "jockey": "R Kingscote"
+        },
+        {
+          "race_number": 4,
+          "runner_number": 12,
+          "horse_id": "K159",
+          "horse_name": "LIGHTNESS OF BEING",
+          "handicap_weight_lb": 116,
+          "jockey": "A Badel"
+        }
+      ]
+    },
+    {
+      "race_number": 5,
+      "source": "https://racing.hkjc.com/en-us/local/information/racecard?Racecourse=HV&racedate=2026%2F11%2F25&RaceNo=5",
+      "active_runners": [
+        {
+          "race_number": 5,
+          "runner_number": 1,
+          "horse_id": "L344",
+          "horse_name": "CAVAMAZING",
+          "handicap_weight_lb": 134,
+          "jockey": "M L Yeung"
+        },
+        {
+          "race_number": 5,
+          "runner_number": 2,
+          "horse_id": "L098",
+          "horse_name": "RUBY THRIVE",
+          "handicap_weight_lb": 133,
+          "jockey": "C Y Ho"
+        },
+        {
+          "race_number": 5,
+          "runner_number": 3,
+          "horse_id": "J299",
+          "horse_name": "BEAUTY THUNDER",
+          "handicap_weight_lb": 132,
+          "jockey": "D B McMonagle"
+        },
+        {
+          "race_number": 5,
+          "runner_number": 4,
+          "horse_id": "H203",
+          "horse_name": "HEALTHY HEALTHY",
+          "handicap_weight_lb": 131,
+          "jockey": "J Orman"
+        },
+        {
+          "race_number": 5,
+          "runner_number": 5,
+          "horse_id": "L449",
+          "horse_name": "CYCLOTRON",
+          "handicap_weight_lb": 129,
+          "jockey": "K C Leung"
+        },
+        {
+          "race_number": 5,
+          "runner_number": 6,
+          "horse_id": "L074",
+          "horse_name": "STARRY SHOW",
+          "handicap_weight_lb": 128,
+          "jockey": "R Kingscote"
+        },
+        {
+          "race_number": 5,
+          "runner_number": 7,
+          "horse_id": "K320",
+          "horse_name": "TOURBILLON GOLFER",
+          "handicap_weight_lb": 127,
+          "jockey": "H Y Yuen (-7)"
+        },
+        {
+          "race_number": 5,
+          "runner_number": 8,
+          "horse_id": "H057",
+          "horse_name": "SAME TO YOU",
+          "handicap_weight_lb": 125,
+          "jockey": "A Badel"
+        },
+        {
+          "race_number": 5,
+          "runner_number": 9,
+          "horse_id": "L115",
+          "horse_name": "JOKER ORBIT",
+          "handicap_weight_lb": 123,
+          "jockey": "Z Purton"
+        },
+        {
+          "race_number": 5,
+          "runner_number": 10,
+          "horse_id": "J458",
+          "horse_name": "CHEVAL VICTORIOUS",
+          "handicap_weight_lb": 122,
+          "jockey": "L Hewitson"
+        },
+        {
+          "race_number": 5,
+          "runner_number": 11,
+          "horse_id": "K112",
+          "horse_name": "QUICK CONTRIBUTION",
+          "handicap_weight_lb": 120,
+          "jockey": "C L Chau (-2)"
+        },
+        {
+          "race_number": 5,
+          "runner_number": 12,
+          "horse_id": "K038",
+          "horse_name": "NOBLE FANS",
+          "handicap_weight_lb": 118,
+          "jockey": "A Atzeni"
+        }
+      ]
+    },
+    {
+      "race_number": 6,
+      "source": "https://racing.hkjc.com/en-us/local/information/racecard?Racecourse=HV&racedate=2026%2F11%2F25&RaceNo=6",
+      "active_runners": [
+        {
+          "race_number": 6,
+          "runner_number": 1,
+          "horse_id": "K307",
+          "horse_name": "ACE",
+          "handicap_weight_lb": 135,
+          "jockey": "K C Leung"
+        },
+        {
+          "race_number": 6,
+          "runner_number": 2,
+          "horse_id": "L267",
+          "horse_name": "EXCEED THE LIMIT",
+          "handicap_weight_lb": 134,
+          "jockey": "Z Purton"
+        },
+        {
+          "race_number": 6,
+          "runner_number": 3,
+          "horse_id": "K084",
+          "horse_name": "STORMI",
+          "handicap_weight_lb": 134,
+          "jockey": "C L Chau (-2)"
+        },
+        {
+          "race_number": 6,
+          "runner_number": 4,
+          "horse_id": "K511",
+          "horse_name": "URANUS STAR",
+          "handicap_weight_lb": 133,
+          "jockey": "C Y Ho"
+        },
+        {
+          "race_number": 6,
+          "runner_number": 5,
+          "horse_id": "J510",
+          "horse_name": "NIGHT PUROSANGUE",
+          "handicap_weight_lb": 130,
+          "jockey": "H T Mo (-2)"
+        },
+        {
+          "race_number": 6,
+          "runner_number": 6,
+          "horse_id": "K252",
+          "horse_name": "ENTHRALLED",
+          "handicap_weight_lb": 129,
+          "jockey": "A Atzeni"
+        },
+        {
+          "race_number": 6,
+          "runner_number": 7,
+          "horse_id": "J131",
+          "horse_name": "CALIFORNIA MOXIE",
+          "handicap_weight_lb": 126,
+          "jockey": "L Ferraris"
+        },
+        {
+          "race_number": 6,
+          "runner_number": 8,
+          "horse_id": "H207",
+          "horse_name": "STURDY RUBY",
+          "handicap_weight_lb": 126,
+          "jockey": "E C W Wong (-3)"
+        },
+        {
+          "race_number": 6,
+          "runner_number": 9,
+          "horse_id": "J398",
+          "horse_name": "LUCK IS BACK",
+          "handicap_weight_lb": 125,
+          "jockey": "H Y Yuen (-7)"
+        },
+        {
+          "race_number": 6,
+          "runner_number": 10,
+          "horse_id": "L093",
+          "horse_name": "VERMILION TEMPEST",
+          "handicap_weight_lb": 125,
+          "jockey": "A Badel"
+        },
+        {
+          "race_number": 6,
+          "runner_number": 11,
+          "horse_id": "L158",
+          "horse_name": "PRESTIGE EMPEROR",
+          "handicap_weight_lb": 121,
+          "jockey": "R Kingscote"
+        },
+        {
+          "race_number": 6,
+          "runner_number": 12,
+          "horse_id": "J236",
+          "horse_name": "AMAZING AWARD",
+          "handicap_weight_lb": 120,
+          "jockey": "B Avdulla"
+        }
+      ]
+    },
+    {
+      "race_number": 7,
+      "source": "https://racing.hkjc.com/en-us/local/information/racecard?Racecourse=HV&racedate=2026%2F11%2F25&RaceNo=7",
+      "active_runners": [
+        {
+          "race_number": 7,
+          "runner_number": 1,
+          "horse_id": "K275",
+          "horse_name": "INCREDIBLE MOMENT",
+          "handicap_weight_lb": 135,
+          "jockey": "C Y Ho"
+        },
+        {
+          "race_number": 7,
+          "runner_number": 2,
+          "horse_id": "J513",
+          "horse_name": "CHARMING BABE",
+          "handicap_weight_lb": 134,
+          "jockey": "H Y Yuen (-7)"
+        },
+        {
+          "race_number": 7,
+          "runner_number": 3,
+          "horse_id": "L135",
+          "horse_name": "GOLDEN CHAMP",
+          "handicap_weight_lb": 134,
+          "jockey": "D B McMonagle"
+        },
+        {
+          "race_number": 7,
+          "runner_number": 4,
+          "horse_id": "K202",
+          "horse_name": "FRIENDS OF SHAJING",
+          "handicap_weight_lb": 132,
+          "jockey": "C L Chau (-2)"
+        },
+        {
+          "race_number": 7,
+          "runner_number": 5,
+          "horse_id": "J323",
+          "horse_name": "GRAND NOVA",
+          "handicap_weight_lb": 132,
+          "jockey": "B Avdulla"
+        },
+        {
+          "race_number": 7,
+          "runner_number": 6,
+          "horse_id": "J217",
+          "horse_name": "ISLAND BUDDY",
+          "handicap_weight_lb": 131,
+          "jockey": "L Ferraris"
+        },
+        {
+          "race_number": 7,
+          "runner_number": 7,
+          "horse_id": "L077",
+          "horse_name": "WITHOUT RHYME",
+          "handicap_weight_lb": 129,
+          "jockey": "A Badel"
+        },
+        {
+          "race_number": 7,
+          "runner_number": 8,
+          "horse_id": "K239",
+          "horse_name": "WINNING MACHINE",
+          "handicap_weight_lb": 128,
+          "jockey": "E C W Wong (-3)"
+        },
+        {
+          "race_number": 7,
+          "runner_number": 9,
+          "horse_id": "K228",
+          "horse_name": "FLYING TING LOK",
+          "handicap_weight_lb": 126,
+          "jockey": "A Atzeni"
+        },
+        {
+          "race_number": 7,
+          "runner_number": 10,
+          "horse_id": "L391",
+          "horse_name": "HERO MASTERMIND",
+          "handicap_weight_lb": 122,
+          "jockey": "L Hewitson"
+        },
+        {
+          "race_number": 7,
+          "runner_number": 11,
+          "horse_id": "K517",
+          "horse_name": "ORIGIN OF FORM",
+          "handicap_weight_lb": 119,
+          "jockey": "M F Poon"
+        },
+        {
+          "race_number": 7,
+          "runner_number": 12,
+          "horse_id": "K462",
+          "horse_name": "CALL ME SUCCESS",
+          "handicap_weight_lb": 117,
+          "jockey": "S Osborne"
+        }
+      ]
+    },
+    {
+      "race_number": 8,
+      "source": "https://racing.hkjc.com/en-us/local/information/racecard?Racecourse=HV&racedate=2026%2F11%2F25&RaceNo=8",
+      "active_runners": [
+        {
+          "race_number": 8,
+          "runner_number": 1,
+          "horse_id": "J290",
+          "horse_name": "FLYING WROTE",
+          "handicap_weight_lb": 131,
+          "jockey": "H Y Yuen (-7)"
+        },
+        {
+          "race_number": 8,
+          "runner_number": 2,
+          "horse_id": "K562",
+          "horse_name": "FLOW WATER FLOW",
+          "handicap_weight_lb": 129,
+          "jockey": "Z Purton"
+        },
+        {
+          "race_number": 8,
+          "runner_number": 3,
+          "horse_id": "K076",
+          "horse_name": "THE BOOM BOX",
+          "handicap_weight_lb": 129,
+          "jockey": "C Y Ho"
+        },
+        {
+          "race_number": 8,
+          "runner_number": 4,
+          "horse_id": "J426",
+          "horse_name": "CORLEONE",
+          "handicap_weight_lb": 128,
+          "jockey": "D B McMonagle"
+        },
+        {
+          "race_number": 8,
+          "runner_number": 5,
+          "horse_id": "K426",
+          "horse_name": "MAKE YOU SMILE",
+          "handicap_weight_lb": 127,
+          "jockey": "L Hewitson"
+        },
+        {
+          "race_number": 8,
+          "runner_number": 6,
+          "horse_id": "K453",
+          "horse_name": "HAPPY BOSS",
+          "handicap_weight_lb": 125,
+          "jockey": "L Ferraris"
+        },
+        {
+          "race_number": 8,
+          "runner_number": 7,
+          "horse_id": "J276",
+          "horse_name": "EMBRACES",
+          "handicap_weight_lb": 124,
+          "jockey": "C L Chau (-2)"
+        },
+        {
+          "race_number": 8,
+          "runner_number": 8,
+          "horse_id": "L402",
+          "horse_name": "MONEY GAMES",
+          "handicap_weight_lb": 124,
+          "jockey": "K C Leung"
+        },
+        {
+          "race_number": 8,
+          "runner_number": 9,
+          "horse_id": "L384",
+          "horse_name": "PASS LINE",
+          "handicap_weight_lb": 123,
+          "jockey": "A Atzeni"
+        },
+        {
+          "race_number": 8,
+          "runner_number": 10,
+          "horse_id": "L542",
+          "horse_name": "SMART OINK",
+          "handicap_weight_lb": 122,
+          "jockey": "E C W Wong (-3)"
+        },
+        {
+          "race_number": 8,
+          "runner_number": 11,
+          "horse_id": "M021",
+          "horse_name": "PRECISION TIME",
+          "handicap_weight_lb": 127,
+          "jockey": "J Orman"
+        },
+        {
+          "race_number": 8,
+          "runner_number": 12,
+          "horse_id": "K406",
+          "horse_name": "WIN METHOD",
+          "handicap_weight_lb": 120,
+          "jockey": "M F Poon"
+        }
+      ]
+    },
+    {
+      "race_number": 9,
+      "source": "https://racing.hkjc.com/en-us/local/information/racecard?Racecourse=HV&racedate=2026%2F11%2F25&RaceNo=9",
+      "active_runners": [
+        {
+          "race_number": 9,
+          "runner_number": 1,
+          "horse_id": "G268",
+          "horse_name": "BRAVE STAR",
+          "handicap_weight_lb": 135,
+          "jockey": "H Bentley"
+        },
+        {
+          "race_number": 9,
+          "runner_number": 2,
+          "horse_id": "K379",
+          "horse_name": "ACE CHAMPION",
+          "handicap_weight_lb": 134,
+          "jockey": "C Y Ho"
+        },
+        {
+          "race_number": 9,
+          "runner_number": 3,
+          "horse_id": "J370",
+          "horse_name": "CALIFORNIA BLITZ",
+          "handicap_weight_lb": 126,
+          "jockey": "C L Chau (-2)"
+        },
+        {
+          "race_number": 9,
+          "runner_number": 4,
+          "horse_id": "K125",
+          "horse_name": "SKY CAP",
+          "handicap_weight_lb": 125,
+          "jockey": "D B McMonagle"
+        },
+        {
+          "race_number": 9,
+          "runner_number": 5,
+          "horse_id": "L545",
+          "horse_name": "DHURANDHAR",
+          "handicap_weight_lb": 123,
+          "jockey": "B Avdulla"
+        },
+        {
+          "race_number": 9,
+          "runner_number": 6,
+          "horse_id": "L281",
+          "horse_name": "FLASHING FIGHTER",
+          "handicap_weight_lb": 123,
+          "jockey": "H Y Yuen (-7)"
+        },
+        {
+          "race_number": 9,
+          "runner_number": 7,
+          "horse_id": "L481",
+          "horse_name": "FOUR STARS ALIGN",
+          "handicap_weight_lb": 122,
+          "jockey": "Z Purton"
+        },
+        {
+          "race_number": 9,
+          "runner_number": 8,
+          "horse_id": "K436",
+          "horse_name": "LIGHTNESS OF MUSIC",
+          "handicap_weight_lb": 122,
+          "jockey": "E C W Wong (-3)"
+        },
+        {
+          "race_number": 9,
+          "runner_number": 9,
+          "horse_id": "J285",
+          "horse_name": "LA FORZA",
+          "handicap_weight_lb": 121,
+          "jockey": "A Badel"
+        },
+        {
+          "race_number": 9,
+          "runner_number": 10,
+          "horse_id": "L221",
+          "horse_name": "QUANTUM CLOUD",
+          "handicap_weight_lb": 120,
+          "jockey": "L Hewitson"
+        },
+        {
+          "race_number": 9,
+          "runner_number": 11,
+          "horse_id": "J401",
+          "horse_name": "YOUNG ARROW",
+          "handicap_weight_lb": 118,
+          "jockey": "S Osborne"
+        },
+        {
+          "race_number": 9,
+          "runner_number": 12,
+          "horse_id": "L170",
+          "horse_name": "TOGETHER WE VALUE",
+          "handicap_weight_lb": 117,
+          "jockey": "M F Poon"
+        }
+      ]
+    }
+  ]
+}
