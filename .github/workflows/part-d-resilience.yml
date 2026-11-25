@@ -1,0 +1,64 @@
+name: Part D independent race recovery
+on:
+  push:
+    paths:
+      - '.github/workflows/part-d-resilience.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  race:
+    strategy:
+      fail-fast: false
+      matrix:
+        race: [2, 3, 4, 5, 6, 7, 8, 9]
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    defaults:
+      run:
+        working-directory: econ5832-part-d
+    steps:
+      - uses: actions/checkout@v6
+      - name: Verify meeting day
+        run: test "$(TZ=Asia/Hong_Kong date +%F)" = "2026-11-25"
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - name: Capture early checkpoint
+        continue-on-error: true
+        env:
+          PART_D_OUTPUT_DIR: checkpoint
+          PART_D_LEAD_MINUTES: '10'
+          RACE: ${{ matrix.race }}
+        run: |
+          timeout 270m node part-d-nov25.cjs --race "$RACE"
+          node validate-output.cjs "$RACE"
+      - name: Preserve early checkpoint
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: checkpoint-race-${{ matrix.race }}
+          path: econ5832-part-d/checkpoint/
+          retention-days: 14
+      - name: Capture final prediction with process retries
+        if: success() || failure()
+        env:
+          PART_D_OUTPUT_DIR: results
+          RACE: ${{ matrix.race }}
+        run: |
+          for attempt in 1 2 3; do
+            if timeout 270m node part-d-nov25.cjs --race "$RACE" && node validate-output.cjs "$RACE"; then
+              exit 0
+            fi
+            sleep 5
+          done
+          exit 1
+      - name: Preserve final prediction and errors
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: independent-race-${{ matrix.race }}
+          path: econ5832-part-d/results/
+          retention-days: 14

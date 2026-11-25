@@ -11,6 +11,8 @@ const logPath = path.join(folder, 'part-d-2026-11-25-events.jsonl');
 const probe = process.argv.includes('--probe');
 const raceArgument = process.argv.indexOf('--race');
 const selectedRace = raceArgument < 0 ? null : Number(process.argv[raceArgument + 1]);
+const leadMinutes = Number(process.env.PART_D_LEAD_MINUTES || 5);
+if (!Number.isFinite(leadMinutes) || leadMinutes < 1 || leadMinutes > 30) throw Error('Invalid prediction lead time');
 if (selectedRace !== null && (!Number.isInteger(selectedRace) || selectedRace < 1 || selectedRace > 9)) {
   throw Error('--race requires an integer from 1 to 9');
 }
@@ -97,8 +99,15 @@ async function run() {
   for (let race = 1; race <= 9; race++) {
     if (selectedRace !== null && race !== selectedRace) continue;
     const post = Date.parse('2026-11-25T' + posts[race-1] + ':00+08:00');
-    if (!probe && (saved(race) || Date.now() >= post)) continue;
-    if (!probe) while (Date.now() < post - 300000) await sleep(Math.min(30000, post-300000-Date.now()));
+    if (!probe && saved(race)) continue;
+    if (!probe && Date.now() >= post) {
+      log({ kind: 'missed_prediction', race, message: 'Process started after scheduled post' });
+      process.exitCode = 1;
+      continue;
+    }
+    if (!probe) while (Date.now() < post - leadMinutes * 60000) {
+      await sleep(Math.min(30000, post-leadMinutes*60000-Date.now()));
+    }
     let done = false;
     do {
       let browser;
@@ -126,4 +135,3 @@ async function run() {
   log({ kind: 'run_complete' });
 }
 run().catch(error => { log({ kind: 'fatal', message: error.message }); process.exitCode = 1; });
-
